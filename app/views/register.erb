@@ -1,0 +1,30 @@
+<div class="container">
+  <h1>Register to this Paradise!</h1>
+
+  <% if @new_user %>
+    <%= "Congrats, your user has been created!" %>
+  <% end %>
+  
+  <form action="/register" method="POST">
+
+      <label for="username">username:</label>
+      <input id="username" type="text" name="username"><br>
+
+      <label for="password">password:</label> 
+      <input id="password" type="text" name="password"><br>
+
+      <label for="email">email:</label>
+      <input id="email" type="text" name="email"><br>
+
+      <label for="first_name">First Name:</label> 
+      <input id="first_name" type="text" name="first_name"><br>
+
+      <label for="last_name">Last Name:</label> 
+      <input id="last_name" type="text" name="last_name"><br>
+
+      <input type="submit" value="Enter Paradise"><br><br>
+    To view your "secret page", you must log in here<a href="/" >Paradise City!</a>
+  </form>
+
+
+</div>
